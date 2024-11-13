@@ -101,3 +101,7 @@ Errors and information will be logged into `background_jobs_errors.log`.
 
 Retry jobs will execute after a 2-minute delay.
 
+## To specify the path for backend workers:
+
+    Linux: APP_PATH=/path/to/job-runner
+    Windows: APP_PATH=D:/home/hafeez/job-runner
