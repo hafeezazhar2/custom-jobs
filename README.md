@@ -25,3 +25,7 @@ DB_DATABASE=*****
 DB_USERNAME=*****
 DB_PASSWORD=*****
 
+## To specify the path for backend workers:
+
+    Linux: APP_PATH=/path/to/job-runner
+    Windows: APP_PATH=D:/home/hafeez/job-runner
