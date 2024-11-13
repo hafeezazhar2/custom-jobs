@@ -29,7 +29,8 @@ DB_DATABASE=*****
 DB_USERNAME=*****
 DB_PASSWORD=*****
 ```
-## To specify the path for backend workers:
+### To specify the path for backend workers:
+Add working directory path in `.env` according to operating system
 
  ```plaintext
  Linux: APP_PATH=/path/to/job-runner
@@ -66,6 +67,7 @@ This endpoint will:
 - Add sample jobs to the job queue.
 - Trigger the background worker to start processing the queue.
 
+### Manual Worker Start (Optional)
 You can also start the worker by running the following commands from the command line (CLI):
 
 **Linux:**
@@ -101,7 +103,4 @@ Errors and information will be logged into `background_jobs_errors.log`.
 
 Retry jobs will execute after a 2-minute delay.
 
-## To specify the path for backend workers:
 
-    Linux: APP_PATH=/path/to/job-runner
-    Windows: APP_PATH=D:/home/hafeez/job-runner
